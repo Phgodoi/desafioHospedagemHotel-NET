@@ -1,4 +1,4 @@
-﻿namespace DesafioHospedagemHotel.Models
+﻿namespace desafioHospedagemHotel_NET.DesafioHospedagemHotel.Models
 {
     public class Reserva
     {
@@ -30,7 +30,39 @@
 
         public void CadastrarSuite(Suite suite)
         {
-            Suite = suite;
+                Console.WriteLine("╔════════════════════════════╗");
+                Console.WriteLine("║  Bem-vindo ao Plaza Hotel  ║");
+                Console.WriteLine("╚════════════════════════════╝");
+    
+                Console.WriteLine("Selecione um quarto:");
+                Console.WriteLine("1 - Standard até 3 pessoas");
+                Console.WriteLine("2 - Premium até 3 pessoas");
+                Console.WriteLine("3 - Deluxe até 5 pessoas");
+                Console.WriteLine("4 - Encerrar");
+
+                switch (Console.ReadLine())
+                {
+                    case "1":
+                        Suite = suite;
+                        break;
+
+                    case "2":
+                        Suite = suite;
+                        break;
+
+                    case "3":
+                        Suite = suite;
+                        break;
+
+                    case "4":
+                        
+                        break;
+
+                    default:
+                        Console.WriteLine("Opção inválida");
+                        break;
+                }         
+            
         }
 
         public int ObterQuantidadeHospedes()

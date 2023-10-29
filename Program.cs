@@ -1,8 +1,7 @@
 ﻿using System.Text;
-using DesafioHospedagemHotel.Models;
+using desafioHospedagemHotel_NET.DesafioHospedagemHotel.Models;
 
 Console.OutputEncoding = Encoding.UTF8;
-
 
 
 List<Pessoa> hospedes = new List<Pessoa>();
@@ -13,6 +12,8 @@ Pessoa p2 = new Pessoa(nome: "Hóspede 2");
 hospedes.Add(p1);   
 hospedes.Add(p2);
 
+
+Suite Standard = new Suite(tipoSuite: "Premium", capacidade: 3, valorDiaria: 30);
 Suite suite = new Suite(tipoSuite: "Premium", capacidade: 3, valorDiaria: 30);
 
 
@@ -22,4 +23,4 @@ reserva.CadastrarHospedes(hospedes);
 
 
 Console.WriteLine($"Hóspedes: {reserva.ObterQuantidadeHospedes()}");
-Console.WriteLine($"Valor à ser pago por {reserva.DiasReservados} dias é: {reserva.CalcularValorDiaria()}");
+Console.WriteLine($"Valor à ser pago por {reserva.DiasReservados} dias é: {reserva.CalcularValorDiaria():C}");

@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesafioHospedagemHotel.Models
+namespace desafioHospedagemHotel_NET.DesafioHospedagemHotel.Models
 {
     public class Suite
     {
         public Suite() { }
 
-        public Suite(string tipoSuite, int capacidade, decimal valorDiaria) 
+        public Suite(string tipoSuite, int capacidade, decimal valorDiaria)
         {
             TipoSuite = tipoSuite;
-            Capacidade = capacidade;    
+            Capacidade = capacidade;
             ValorDiaria = valorDiaria;
         }
 
